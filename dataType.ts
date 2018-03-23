@@ -44,3 +44,13 @@ let un: void= null;//
 
 let val: any = 'a'
 let strLength: number = (val as string).length;
+
+
+//补充
+//let 
+//for (var i = 0; i < 10 ; i++) {
+   // setTimeout(function() {console.log(i); }, 100 * i);
+//}结果
+//for (let i = 0; i < 10 ; i++) {
+    //setTimeout(function() {console.log(i); }, 100 * i);
+}//
