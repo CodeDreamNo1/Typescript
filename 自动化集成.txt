@@ -1,0 +1,26 @@
+gulp-typescript
+
+var gulp = require("gulp");
+var ts = require("gulp-typescript");
+
+gulp.task("default", function () {
+    var tsResult = gulp.src("src/*.ts")
+        .pipe(ts({
+              noImplicitAny: true,
+              out: "output.js"
+        }));
+    return tsResult.js.pipe(gulp.dest('built/local'));
+});
+
+
+
+webpack
+npm install ts-loader --save-dev
+
+≈‰÷√loaders
+module: {
+        loaders: [
+            // all files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'
+            { test: /\.tsx?$/, loader: "ts-loader" }
+        ]
+    }

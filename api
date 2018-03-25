@@ -1,8 +1,0 @@
-interface //关键字 接口
-interface Val {
-	label: string;
-}
-function fun(obj:Val) {
-	
-}
-fun({size: 10, label:'11111'}) /////必须包含参数label且是字符串
